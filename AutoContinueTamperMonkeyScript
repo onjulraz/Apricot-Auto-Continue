@@ -1,0 +1,28 @@
+// ==UserScript==
+// @name         autocontinue3
+// @namespace    http://tampermonkey.net/
+// @version      2024-05-09
+// @description  try to take over the world!
+// @author       You
+// @match        https://apricot.socialsolutions.com/*
+// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @grant        none
+// ==/UserScript==
+
+function autoClickContinue() {
+    // Target your continue button
+    const continueButton = document.querySelector('button[type="button"][tabindex="0"]'); // Or use the other selector
+
+    if (continueButton) {
+        continueButton.click();
+    }
+}
+
+// Find the save record button by its ID
+const saveRecordButton = document.getElementById('save_record');
+
+// Add an event listener to the save button
+saveRecordButton.addEventListener('click', function() {
+    // Call the autoClickContinue function shortly after the save button is clicked
+    setTimeout(autoClickContinue, 2000); // Adjust the delay if needed
+});
