@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         autocontinue3
-// @namespace    http://tampermonkey.net/
+// @name         Apricot Autocontinue
+// @namespace    http://www.onjulraz.me
 // @version      2024-05-09
-// @description  try to take over the world!
-// @author       You
+// @description  Skips the continue button in Apricot
+// @author       Christopher Lynch
 // @match        https://apricot.socialsolutions.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
